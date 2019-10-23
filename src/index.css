@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body, #root {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-image: url("http://media.idownloadblog.com/wp-content/uploads/2014/04/apple_wallpaper_breaking-bad-yellow_ipad_retina_parallax.jpg") ;
+}
