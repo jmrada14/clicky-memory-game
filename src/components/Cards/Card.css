@@ -17,7 +17,8 @@
     border-radius: 5%;
 }
 .card > .img-container > img {
-    width: 60%
+    width: 50%;
+    border-radius: 10px;
 }
 
 .card > .content {

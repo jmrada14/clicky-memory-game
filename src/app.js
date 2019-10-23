@@ -12,6 +12,7 @@ class App extends Component {
         highscore: 0
     };
 
+
     gameOver = () => {
         if (this.state.score > this.state.highscore) {
             this.setState({highscore: this.state.score}, function() {
@@ -26,6 +27,12 @@ class App extends Component {
         return true;
     };
 
+youWin = () => {
+    if (this.state.score === 2){
+        alert("you win")
+    }
+};
+
     clickCount = id => {
         this.state.cards.find((x, i) => {
             if (x.id === id) {
@@ -38,6 +45,7 @@ class App extends Component {
                     return true;
                 } else {
                     this.gameOver();
+                    this.youWin()
                 }
             }
         });
@@ -52,6 +60,7 @@ class App extends Component {
                         clickCount={this.clickCount}
                         id={card.id}
                         key={card.id}
+                        name={card.name}
                         image={card.image}
                     />
                 ))}
